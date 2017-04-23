@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+
+	<style type="text/css">
+		body{
+			background-color: #fff;
+		}
+
+		section{
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+		    align-items: center;
+		    justify-content: center;
+		}
+
+		nav{
+			text-align: center;
+			font-family: sans-serif;
+			padding: 25px 0;
+		}
+
+		hr{
+			width: 80vw;
+			opacity: 0.2;
+		}
+
+		#survey{
+			overflow: none;
+			background-color: #ccc;
+			/*margin-top: 20px;*/
+			border-top: 1px solid #333;
+			padding-top: 20px;
+			padding-bottom: 60px;
+			color: #333;
+			font-family: sans-serif;
+		}
+		#survey h1{
+			text-align: left;
+			font-family: sans-serif;
+			font-size: 45px;
+			font-weight: lighter;
+			letter-spacing: 10px;
+			margin-top: 60px;
+			margin-bottom: 50px;
+			color: #000;
+		}
+
+		#survey h3{
+			font-size: 25px;
+			width: 80vw;
+		}
+		#survey h4{
+			color: #333;
+			padding: 30px 0 10px;
+			width: 80vw;
+		}
+		#survey input{
+			width: 80vw;
+			background-color: #fff;
+			margin-bottom: 20px;
+		}
+
+		.question{
+			margin-top: 30px;
+			border-radius: 5px;
+			text-align: center;
+			overflow: hidden;
+		}
+		.question h3{
+			color: #000;
+			padding-top: 80px;
+			padding-left: 15px;
+			font-size: 25px !important;
+			text-transform: uppercase;
+			font-weight: bolder;
+			text-shadow: 1px 1px 3px rgba(200,200,200,0.3);
+		}
+		.question div{
+			margin-left: auto;
+			margin-right: auto;
+			/*text-transform: lowercase;*/
+			padding-top: 15px;
+			padding-left: 15px;
+			color: #000;
+			font-size: 40px;
+			max-width: 70vw;
+			font-weight: lighter;
+		}
+		.question div::first-letter { 
+			text-transform: capitalize;
+		}
+		.question select{
+			margin: 20px 0 20px;
+			background-color: #222;
+			color: #fff;
+			font-size: 40px;
+		}
+		.question select option{
+			text-align: center;
+		}
+
+		#submit{
+			background: rgba(2, 119, 202,0.9);
+			color: #fff;
+			margin-top: 100px;
+			border-radius: 10px;
+			padding: 10px 12px;
+			font-size: 25px;
+			min-height: 50px;
+			width: 80vw;
+		}
+	</style>
+</head>
+<body>
+
+	<section id="survey">
+		<h1>SURVEY</h1>
+
+		<hr>
+		<h3><strong>About You</strong></h3>
+
+		<h4>Name (Required)</h4>
+		<input type="text" name="" id="name" class="myForm" required >
+
+		<h4>Link to Photo Image (Required)</h4>
+		<input type="text" name="" id="photo" class="myForm" required >
+
+		<hr>
+
+		<div class="question">
+			<h3><strong>Question 1</strong></h3>
+
+			<div>I prefer to play with friends.</div>
+
+		 	<select data-placeholder="" class="myForm" id="q1">
+		 		<option value=""></option>
+	            <option value="1">Strongly Disagree</option>
+	            <option value="2">Disagree</option>
+	            <option value="3">Neutral</option>
+	            <option value="4">Agree</option>
+	            <option value="5">Strongly Agree</option>
+	      	</select>
+		</div>
+
+		<div class="question">
+			<h3><strong>Question 2</strong></h3>
+
+			<div>Generally speaking, sport video games are not my forte.</div>
+
+		 	<select data-placeholder="" class="myForm" id="q2">
+		 		<option value=""></option>
+	            <option value="1">Strongly Disagree</option>
+	            <option value="2">Disagree</option>
+	            <option value="3">Neutral</option>
+	            <option value="4">Agree</option>
+	            <option value="5">Strongly Agree</option>
+	      	</select>
+		</div>
+
+		<div class="question">
+			<h3><strong>Question 3</strong></h3>
+
+			<div>Gimme the loot.</div>
+
+		 	<select data-placeholder="" class="myForm" id="q3">
+		 		<option value=""></option>
+	            <option value="1">Strongly Disagree</option>
+	            <option value="2">Disagree</option>
+	            <option value="3">Neutral</option>
+	            <option value="4">Agree</option>
+	            <option value="5">Strongly Agree</option>
+	      	</select>
+		</div>
+
+
+		<div class="question">
+			<h3><strong>Question 4</strong></h3>
+
+			<div>Realistic graphics are amazing.</div>
+
+		 	<select data-placeholder="" class="myForm" id="q4">
+		 		<option value=""></option>
+	           	<option value="1">Strongly Disagree</option>
+	            <option value="2">Disagree</option>
+	            <option value="3">Neutral</option>
+	            <option value="4">Agree</option>
+	            <option value="5">Strongly Agree</option>
+	      	</select>
+		</div>
+
+
+		<div class="question">
+			<h3><strong>Question 5</strong></h3>
+
+			<div>You may have won the battle, but I will win the war.</div>
+
+		 	<select data-placeholder="" class="myForm" id="q5">
+		 		<option value=""></option>
+	            <option value="1">Strongly Disagree</option>
+	            <option value="2">Disagree</option>
+	            <option value="3">Neutral</option>
+	            <option value="4">Agree</option>
+	            <option value="5">Strongly Agree</option>
+	      	</select>
+		</div>
+
+		<div class="question">
+			<h3><strong>Question 6</strong></h3>
+
+			<div>If the game is too hard, get better</div>
+
+		 	<select data-placeholder="" class="myForm" id="q6">
+		 		<option value=""></option>
+	           	<option value="1">Strongly Disagree</option>
+	            <option value="2">Disagree</option>
+	            <option value="3">Neutral</option>
+	            <option value="4">Agree</option>
+	            <option value="5">Strongly Agree</option>
+	      	</select>
+		</div>
+
+		<div class="question">
+			<h3><strong>Question 7</strong></h3>
+
+			<div>I prefer Co-Op over Player vs Player</div>
+
+		 	<select data-placeholder="" class="myForm" id="q7">
+		 		<option value=""></option>
+	            <option value="1">Strongly Disagree</option>
+	            <option value="2">Disagree</option>
+	            <option value="3">Neutral</option>
+	            <option value="4">Agree</option>
+	            <option value="5">Strongly Agree</option>
+	      	</select>
+		</div>
+
+		<div class="question">
+			<h3><strong>Question 8</strong></h3>
+
+			<div>Shut up and give me minecraft.</div>
+
+		 	<select data-placeholder="" class="myForm" id="q8">
+		 		<option value=""></option>
+	            <option value="1">Strongly Disagree</option>
+	            <option value="2">Disagree</option>
+	            <option value="3">Neutral</option>
+	            <option value="4">Agree</option>
+	            <option value="5">Strongly Agree</option>
+	      	</select>
+		</div>
+
+		<div class="question">
+			<h3><strong>Question 9</strong></h3>
+
+			<div>I have spent a shameful amount of money on in app purchases.</div>
+
+		 	<select data-placeholder="" class="myForm" id="q9">
+		 		<option value=""></option>
+	            <option value="1">Strongly Disagree</option>
+	            <option value="2">Disagree</option>
+	            <option value="3">Neutral</option>
+	            <option value="4">Agree</option>
+	            <option value="5">Strongly Agree</option>
+	      	</select>
+		</div>
+
+		<div class="question">
+			<h3><strong>Question 10</strong></h3>
+
+			<div>Chess is the best.</div>
+
+		 	<select data-placeholder="" class="myForm" id="q10">
+		 		<option value=""></option>
+	            <option value="1">Strongly Disagree</option>
+	            <option value="2">Disagree</option>
+	            <option value="3">Neutral</option>
+	            <option value="4">Agree</option>
+	            <option value="5">Strongly Agree</option>
+	      	</select>
+		</div>
+
+		<hr>
+
+		<button id="submit">Submit</button>
+
+	</section>
+
+
+	<nav>
+		<a href="/api/friends">API Friends List</a> |
+		<a href="https://github.com/eyeofbri/HW13_-FriendFinder">GitHub Repo</a>
+	</nav>
+
+
+
+	<script type="text/javascript">
+
+		// Capture the form inputs 
+	    $("#submit").on("click", function(){
+
+	    	// Form validation
+	    	function validateForm() {
+			  var isValid = true;
+			  $('.myForm').each(function() {
+			    if ( $(this).val() === '' )
+			        isValid = false;
+			  })
+			  return isValid;
+			}
+
+			// If all required fields are filled
+			if (validateForm() == true)
+			{
+				alert("ok");
+				// Create an object for the user's data
+		    	var userData = {
+		    		name: $("#name").val(),
+		    		photo: $("#photo").val(),
+		    		scores: [
+		    			$("#q1").val(), 
+		    			$("#q2").val(), 
+		    			$("#q3").val(), 
+		    			$("#q4").val(), 
+		    			$("#q5").val(), 
+		    			$("#q6").val(), 
+		    			$("#q7").val(), 
+		    			$("#q8").val(), 
+		    			$("#q9").val(), 
+		    			$("#q10").val(), 
+		    		]
+		    	}
+
+
+		    	// Create a post URL using the window origin
+		    	var currentURL = window.location.origin;
+
+		    	//working here
+
+		    	// // AJAX post the data to the friends API. 
+		    	// $.post(currentURL + "/api/friends", userData, function(data){
+
+		    	// 	// Grab the result from the AJAX post so that the best match's name and photo are displayed.
+		    	// 	$("#matchName").text(data.name);
+		    	// 	$('#matchImg').attr("src", data.photo);
+
+			    // 	// Show the modal with the best match 
+			    // 	$("#resultsModal").modal('toggle');
+
+		    	// });
+			}
+			else
+			{
+				alert("Please fill out all fields before submitting!");
+			}
+	    	
+	    	return false;
+	    });
+    </script>
+
+</body>
+</html>
