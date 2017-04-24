@@ -1,0 +1,27 @@
+{
+  "name": "gw13_friendfinder",
+  "version": "1.0.0",
+  "description": "A simple dating-app-like app",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "path": "^0.12.7",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eyeofbri/HW13_-FriendFinder.git"
+  },
+  "author": "brian mclendon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eyeofbri/HW13_-FriendFinder/issues"
+  },
+  "homepage": "https://github.com/eyeofbri/HW13_-FriendFinder#readme"
+}
